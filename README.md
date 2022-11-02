@@ -37,17 +37,21 @@ The All Stock Analysis datasets were consistent with that of the Refactored Anal
 
 ## Before Refactoring 2017 Stock Data Set:
 
-!
+! "C:\Users\Taxman\OneDrive\Resources\Before refactoring 2017.png"
 
 The refactored 2017 code ran:
 
+! "C:\Users\Taxman\OneDrive\Resources\After refactoring 2017.png"
 
 The results were positive. The trial allowed for a decrease of .09 seconds However, the outcome was very different with the 2018 Stock Data.
 
-## Before Refactoring 2018 Stock Data Set
+## Before Refactoring 2018 Stock Data Set:
+
+! "C:\Users\Taxman\OneDrive\Resources\Before Refactoring 2018.png"
 
 The refactored 2018 code ran:
 
+! 
 
 This trial time decreased about -.02 in the refactored coding. Further analysis needs to be comed to account for this discrepancy.
 
