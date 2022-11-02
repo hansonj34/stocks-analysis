@@ -37,7 +37,7 @@ The All Stock Analysis datasets were consistent with that of the Refactored Anal
 
 ## Before Refactoring 2017 Stock Data Set:
 
-
+! (https://github.com/hansonj34/stocks-analysis/blob/main/Resources/Before%20refactoring%202017.png)
 
 ## After Refactoring 2017 Stock Data Set:
 
