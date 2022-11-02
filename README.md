@@ -37,11 +37,11 @@ The All Stock Analysis datasets were consistent with that of the Refactored Anal
 
 ## Before Refactoring 2017 Stock Data Set:
 
-! "C:\Users\Taxman\OneDrive\Resources\Before refactoring 2017.png"
+![Before Refactoring 2017 Stock Data Set](https://github.com/jacquie0583/Stock-Analysis/blob/main/Before%20refactoring%202017.png)
 
-The refactored 2017 code ran:
+## After Refactoring 2017 Stock Data Set:
 
-! "C:\Users\Taxman\OneDrive\Resources\After refactoring 2017.png"
+
 
 The results were positive. The trial allowed for a decrease of .09 seconds However, the outcome was very different with the 2018 Stock Data.
 
