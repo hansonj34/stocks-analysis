@@ -36,6 +36,7 @@ If Cells(i, 3) > 0 Then Cells(i, 3).Interior.Color = vbGreen Else Cells(i, 3).In
 The All Stock Analysis datasets were consistent with that of the Refactored Analysis datasete. However the runtimes varied in outcomes.The initial 2017 code ran .08125 seconds:
 
 ## Before Refactoring 2017 Stock Data Set:
+![Before Refractoring] (Resources/After refactoring 2017.png)
 
 
 ## After Refactoring 2017 Stock Data Set:
