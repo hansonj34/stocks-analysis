@@ -52,7 +52,7 @@ The results were positive. The trial allowed for a decrease of .09 seconds Howev
 
 The refactored 2018 code ran:
 
-! [After Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/After%20refactoring%202018.png?raw=true)
+![After Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/After%20refactoring%202018.png?raw=true)
 
 This trial time decreased about -.02 in the refactored coding. Further analysis needs to be comed to account for this discrepancy.
 
