@@ -10,7 +10,7 @@ To recap, this project is a result of your parent’s desire to invest in altern
 
 ### Analysis
 
-#### Refactor VBA Code Process Explainedw with Examples:
+#### Refactoring VBA Code Process Explained with Examples:
 
 TickerIndex was created as a variable and set to zero before iterating over all the rows. It will be used to access the appropriate index across the four different arrays.
 For i = 0 To 11 tickerIndex = tickers(i)
