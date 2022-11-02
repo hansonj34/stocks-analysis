@@ -52,17 +52,18 @@ The results were positive. The trial allowed for a decrease of .09 seconds Howev
 
 The refactored 2018 code ran:
 
+! [After Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/After%20refactoring%202018.png?raw=true)
 
 This trial time decreased about -.02 in the refactored coding. Further analysis needs to be comed to account for this discrepancy.
 
-### Summary
+## Summary
 Advantages of refactoring code:
 
 Refactoring is a way to optimize the existing code by making it easier, faster and more efficient without changing its behavior. Facilitates the discovery of bugs. Improve readability and Maintainability
 
 ### Disadvantages of refactoring code:
 
-Time Consuming Possibility of introducing mistakes Can be expensive and risky Change th intent of the code
+Time consuming possibility and introducing mistakes. Can be expensive and risky.  One can accidentally change the content of the code.
 
 ## How these Pros and cons apply to refactoring the original VBA script:
-The pros are that the run time decreased and thus making the code more efficient for the 2017 data set. However, cons are that this alteration works for some data sets but not for others. The 2018 data run time increased. The other cons are that its very time consuming and can allow for error and an alteration of intent. For example, if a particular line is changed in the order the data is read, a new meaning of the code could result or can cause an inability of the code to run properly.
+The pros are that the run time decreased and thus making the code more efficient for the 2017 data set. However, cons are that this only works on some data sets but not for others. The 2018 data run time increased. The other cons are that its very time consuming and can allow for error and an alteration of content. For example, if a particular line is changed in the order the data is read, a new meaning of the code could result or can cause the code to run properly.
