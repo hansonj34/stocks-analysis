@@ -10,35 +10,42 @@ To recap, this project is a result of your parent’s desire to invest in altern
 
 ### Analysis
 
-Refactor VBA Code Process Explainedw with Examples
+#### Refactor VBA Code Process Explainedw with Examples:
+
 TickerIndex was created as a variable and set to zero before iterating over all the rows. It will be used to access the appropriate index across the four different arrays.
 For i = 0 To 11 tickerIndex = tickers(i)
 
-Output Arrays were designated as Long data type (ticker Volumes) and Single data type (ticker starting Prices and ticker ending prices).
+#### Output Arrays were designated as Long data type (ticker Volumes) and Single data type (ticker starting Prices and ticker ending prices).
+
 Dim tickerVolumes As Long Dim tickerStartingPrices As Single Dim tickerEndingPrices As Single
 
-A loop initiates the tickerVolume to Zero and accessed by the tickerIndex. Providing a filter if the next row's ticker doesn't match, the tickerIdeex is increased.
+#### A loop initiates the tickerVolume to Zero and accessed by the tickerIndex. Providing a filter if the next row's ticker doesn't match, the tickerIdeex is increased.
+
 tickerVolumes = 0 For j = 2 To RowCount If Cells(j, 1).Value = tickerIndex Then
 
-The code loops through the stock data, reading and storing the data from all the rows. Modifying withing the loop, allows for the increase of the tickerVolume variable thereby increasing the tickerVolume for the stock ticker. We utilized if-then statements as a filter if to assign the closing price to the ticker starting prices and ticker ending prices variable.
+#### The code loops through the stock data, reading and storing the data from all the rows. Modifying withing the loop, allows for the increase of the tickerVolume variable thereby increasing the tickerVolume for the stock ticker. We utilized if-then statements as a filter if to assign the closing price to the ticker starting prices and ticker ending prices variable.
+
 If Cells(j, 1).Value = tickerIndex Then tickerVolumes = tickerVolumes + Cells(j, 8).Value If Cells(j - 1, 1).Value <> tickerIndex And Cells(j, 1).Value = tickerIndex Then tickerStartingPrices = Cells(j, 6).Value End If If Cells(j + 1, 1).Value <> tickerIndex And Cells(j, 1).Value = tickerIndex Then tickerEndingPrices = Cells(j, 6).Value
 
-Formatting the cells with codes added color and self-explanatory visual appeal.
+#### Formatting the cells with codes added color and visual appeal.
+
 If Cells(i, 3) > 0 Then Cells(i, 3).Interior.Color = vbGreen Else Cells(i, 3).Interior.Color = vbRed
 
-Comments summited according to Best Practices for Writing Readable Code
-Results
+## Results:
+
 The All Stock Analysis datasets were consistent with that of the Refactored Analysis datasete. However the runtimes varied in outcomes.The initial 2017 code ran .08125 seconds:
 
-Before Refactoring 2017 Stock Data Set
+## Before Refactoring 2017 Stock Data Set:
+
+!
 
 The refactored 2017 code ran:
 
 Refracted 2017 Stock Dataset
 
-Our attempts proved fruitful in this code run. The trial allowed for a decrease of .09 seconds However, the outcome was very different with the 2018 dataset and this phenomenon has our staff baffled.
+The results were positive. The trial allowed for a decrease of .09 seconds However, the outcome was very different with the 2018 Stock Data.
 
-Before Refactoring 2018 Stock Data Set
+Before Refactoring 2018 Stock Data SetT
 
 The refactored 2018 code ran:
 
