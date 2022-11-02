@@ -2,15 +2,15 @@
 ## Overview of Project
 ### Purpose
 
-Grateful, Steve, that you have appreciated our work so far and would like us to expand the dataset to include the entire stock market over the last few years. We will check to see if the information is the same as previously delivered then we will refactor so the VBA script runs in a timely fashion by adjusting the code to loop through all the data one time in order to collect the same information in the Data Analysis Section. Other possible techniques to accomplished this is by taking fewer steps, using less memeory, or improving logic code to a straight forward approach.
+To expand the dataset to include the entire stock market over the last few years. We will check to see if the information is the same as previously shown. Then we will refactor so the VBA script runs in a timely fashion by adjusting the code to loop through all the data one time in order to collect the same information in the Data Analysis Section. Some possible techniques to accomplish this are by taking fewer steps, using less memory, or improving the logic of the code.
 
 ### Background
 
-To recap, this project is a result of your parent’s desire to invest in alternative energy sources which lead to their investment in DAQO New Energy Corp. You promised them an assessment of the company’s performance as well as you have concerns about diversity. Your request of a new program will help provide you with data to assist you in possible choices so you can diversify.
+Steve, this project is a result of your parent’s desire to invest in alternative energy sources which lead to their investment in DAQO New Energy Corp. You promised them an assessment of the company’s performance as well as you have concerns about diversity. Your new program request will help provide you with data to assist you in making some better possible choices of diversification for their portfolio.
 
 ### Analysis
 
-#### Refactoring VBA Code Process Explained with Examples:
+#### Refactoring VBA Code Process Explained with Examples.
 
 TickerIndex was created as a variable and set to zero before iterating over all the rows. It will be used to access the appropriate index across the four different arrays.
 For i = 0 To 11 tickerIndex = tickers(i)
@@ -19,7 +19,7 @@ For i = 0 To 11 tickerIndex = tickers(i)
 
 Dim tickerVolumes As Long Dim tickerStartingPrices As Single Dim tickerEndingPrices As Single
 
-#### A loop initiates the tickerVolume to Zero and accessed by the tickerIndex. Providing a filter if the next row's ticker doesn't match, the tickerIdeex is increased.
+#### A loop initiates the tickerVolume to Zero and accessed by the tickerIndex. Providing a filter if the next row's ticker doesn't match, the tickerIndex is increased.
 
 tickerVolumes = 0 For j = 2 To RowCount If Cells(j, 1).Value = tickerIndex Then
 
@@ -27,13 +27,13 @@ tickerVolumes = 0 For j = 2 To RowCount If Cells(j, 1).Value = tickerIndex Then
 
 If Cells(j, 1).Value = tickerIndex Then tickerVolumes = tickerVolumes + Cells(j, 8).Value If Cells(j - 1, 1).Value <> tickerIndex And Cells(j, 1).Value = tickerIndex Then tickerStartingPrices = Cells(j, 6).Value End If If Cells(j + 1, 1).Value <> tickerIndex And Cells(j, 1).Value = tickerIndex Then tickerEndingPrices = Cells(j, 6).Value
 
-#### Formatting the cells with codes added color and visual appeal.
+#### Formatting the cells with codes added visual appeal plus more visually logical understanding of the results.
 
 If Cells(i, 3) > 0 Then Cells(i, 3).Interior.Color = vbGreen Else Cells(i, 3).Interior.Color = vbRed
 
 ## Results:
 
-The All Stock Analysis datasets were consistent with that of the Refactored Analysis datasete. However the runtimes varied in outcomes.The initial 2017 code ran .08125 seconds:
+The All Stock Analysis datasets were consistent with that of the Refactored Analysis datasets. However the runtimes varied in outcomes.The initial 2017 code ran in .08125 seconds.
 
 ## Before Refactoring 2017 Stock Data Set:
 
@@ -44,26 +44,26 @@ The All Stock Analysis datasets were consistent with that of the Refactored Anal
 ![After Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/After%20refactoring%202017.png?raw=true)
 
 
-The results were positive. The trial allowed for a decrease of .09 seconds However, the outcome was very different with the 2018 Stock Data.
+The results were positive. The trial allowed for a decrease of .09 seconds. 
 
 ## Before Refactoring 2018 Stock Data Set:
 
 ![Before Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/Before%20Refactoring%202018.png?raw=true)
 
-The refactored 2018 code ran:
+The refactored 2018 code:
 
 ![After Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/After%20refactoring%202018.png?raw=true)
 
-This trial time decreased about -.02 in the refactored coding. Further analysis needs to be comed to account for this discrepancy.
+The results were negative. This trial time decreased about -.02 in the refactored coding. More analysis needs to be done to account for this discrepancy.
 
 ## Summary
-Advantages of refactoring code:
+### Advantages of refactoring code:
 
-Refactoring is a way to optimize the existing code by making it easier, faster and more efficient without changing its behavior. Facilitates the discovery of bugs. Improve readability and Maintainability
+Refactoring is a way to optimize the existing code by making it easier, faster, and more efficient without changing its behavior. It will improve readability and maintenance. It also helps identifies any bugs in the code.
 
 ### Disadvantages of refactoring code:
 
-Time consuming possibility and introducing mistakes. Can be expensive and risky.  One can accidentally change the content of the code.
+It is time consuming and there is the possibility of introducing mistakes. It can be really expensive and risky.  One can accidentally change the content of the code.
 
 ## How these Pros and cons apply to refactoring the original VBA script:
-The pros are that the run time decreased and thus making the code more efficient for the 2017 data set. However, cons are that this only works on some data sets but not for others. The 2018 data run time increased. The other cons are that its very time consuming and can allow for error and an alteration of content. For example, if a particular line is changed in the order the data is read, a new meaning of the code could result or can cause the code to run properly.
+The pros are that the run time decreased and thus making the code more efficient for the 2017 data set. However, cons are that this only works on some data sets but not for others. The 2018 data run time increased. Some other cons are that its very time consuming and can allow for error and an alteration of content. For example, if a particular line is changed in the order the data is read, a new meaning of the code could result or can cause the code to run properly.
