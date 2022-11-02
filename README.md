@@ -48,11 +48,10 @@ The results were positive. The trial allowed for a decrease of .09 seconds Howev
 
 ## Before Refactoring 2018 Stock Data Set:
 
-
+![Before Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/Before%20Refactoring%202018.png?raw=true)
 
 The refactored 2018 code ran:
 
-! 
 
 This trial time decreased about -.02 in the refactored coding. Further analysis needs to be comed to account for this discrepancy.
 
