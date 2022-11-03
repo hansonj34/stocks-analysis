@@ -6,7 +6,7 @@ To expand the dataset to include the entire stock market over the last few years
 
 ### Background
 
-Steve, this project is a result of your parent’s desire to invest in alternative energy sources which lead to their investment in DAQO New Energy Corp. You promised them an assessment of the company’s performance as well as you have concerns about diversity. Your new program request will help provide you with data to assist you in making some better possible choices of diversification for their portfolio.
+Steve, this project is due to your parent’s desire to invest in alternative energy sources which lead to their investment in DAQO New Energy Corp. You promised them an assessment of the company’s performance as well as you have concerns about diversity. Your new program request will help provide you with data to assist you in making some better possible choices of diversification for their portfolio.
 
 ### Analysis
 
@@ -50,7 +50,7 @@ The results were positive. The trial allowed for a decrease of .09 seconds.
 
 ![Before Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/Before%20Refactoring%202018.png?raw=true)
 
-The refactored 2018 code:
+## After Refactoring 2018 Stock Data Set:
 
 ![After Refactoring](https://github.com/hansonj34/stocks-analysis/blob/main/Resources/After%20refactoring%202018.png?raw=true)
 
